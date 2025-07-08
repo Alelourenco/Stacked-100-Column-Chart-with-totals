@@ -1,0 +1,82 @@
+/**
+ * Estilos para o visual customizado Stacked 100% Column Chart
+ * Garante transparência, responsividade e boa experiência do usuário
+ */
+
+/* Remove estilos padrão que podem interferir */
+p {
+    font-size: 20px;
+    font-weight: bold;
+    em {
+        background: yellow;
+        padding: 5px;
+    }
+}
+
+/* Container principal do visual - garante transparência total */
+.visual-container {
+    background: none !important;
+    background-color: transparent !important;
+    pointer-events: auto;
+    cursor: default;
+}
+
+/* Todos os elementos filhos também mantêm transparência */
+.visual-container div {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+.visual-container svg {
+    background: none !important;
+    background-color: transparent !important;
+    pointer-events: auto;
+}
+
+/* Barras do gráfico - interativas mas sem cursor especial */
+.visual-container svg rect {
+    cursor: default;
+    transition: opacity 0.2s ease;
+}
+
+/* Feedback visual no hover sem alterar o cursor */
+.visual-container svg rect:hover {
+    filter: brightness(1.1);
+}
+
+/* Textos não capturam eventos de mouse */
+.visual-container svg text {
+    cursor: default;
+    pointer-events: none;
+}
+
+/* 
+ * Estilização da barra de rolagem horizontal
+ * Melhora a experiência em gráficos com muitas categorias
+ */
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+.visual-container div::-webkit-scrollbar {
+    height: 12px;
+    background: transparent;
+}
+
+.visual-container div::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.visual-container div::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+}
+
+.visual-container div::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Firefox */
+.visual-container div {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}

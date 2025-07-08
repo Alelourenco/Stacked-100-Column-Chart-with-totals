@@ -1,0 +1,21 @@
+{
+  "visual": {
+    "name": "100% stacked columns with data labels and totals",
+    "displayName": "100% stacked columns with data labels and totals",
+    "guid": "stacked100ColumnChart7C94647E09DB48D2A1A65CA3F9709859",
+    "visualClassName": "Visual",
+    "version": "1.0.0.0",
+    "description": "Gráfico de colunas empilhadas 100% com recursos avançados: rótulos internos personalizáveis, totais, paleta de cores customizável, formatação inteligente de moeda, sistema de seleção interativa e integração nativa com Power BI.",
+    "supportUrl": "https://www.linkedin.com/in/alexandre-lourencodatasciencie/",
+    "gitHubUrl": "https://github.com/Alelourenco"
+  },
+  "apiVersion": "5.3.0",
+  "author": { "name": "Alexandre Lourenço", "email": "alexandre.2.lourenco@outlook.com" },
+  "assets": { "icon": "assets/icon.png" },
+  "externalJS": [],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": null,
+  "stringResources": [],
+  "version": "1.0.0.0"
+}
