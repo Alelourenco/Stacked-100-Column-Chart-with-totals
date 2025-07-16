@@ -1,9 +1,11 @@
 # Power BI Visual - .gitignore
 
 # Build outputs
-dist/
-*.pbiviz
+dist/package.json
 webpack.statistics.*.html
+
+# Temporary build files but keep .pbiviz for distribution
+# *.pbiviz - commented out to allow distribution file
 
 # Temporary build files
 .tmp/
